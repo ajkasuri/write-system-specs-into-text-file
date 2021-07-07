@@ -1,7 +1,0 @@
-****** Following is the system specifications *****
-
-Hostname Mac-Adnan-SE-447.local
-Platform darwin
-Processor  2.80GHz Quad-Core Intel(R) Core(TM) i7-4980HQ, 
-Memory 16 GB
-Memory Disk 233 GB

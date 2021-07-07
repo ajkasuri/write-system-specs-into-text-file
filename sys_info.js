@@ -6,8 +6,7 @@ const disk = require('diskusage');
  * @returns string 
  */
 function memoryInfo() {
-    let mem = Math.round(os.totalmem() / 1024 / 1024 / 1024) + ' GB';
-    return 'Memory ' + mem;
+    return 'Memory ' + Math.round(os.totalmem() / 1024 / 1024 / 1024) + ' GB';
 }
 
 /**
@@ -53,7 +52,16 @@ function diskInfo() {
     return diskDetail;
 }
 
+/**
+ * 
+ * @returns string
+ */
+function userHomeDirectory() {
+    return os.homedir();
+}
+
 module.exports.cpuInfo = cpuInfo;
 module.exports.memoryInfo = memoryInfo;
 module.exports.diskInfo = diskInfo;
 module.exports.platform = platform;
+module.exports.user = userHomeDirectory;
